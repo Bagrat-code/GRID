@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+height: 10vh;
+}
+
+.contenu > article {
+    border: 4px solid black;
+}
+
+.contenu {
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+
+.facebook {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background: #C3A5F5;
+    font-size: 70px;
+
+}
+
+.twitter {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background: #FFA9AF;
+    font-size: 70px;
+}
+
+.instagram {
+    grid-column: 1/2 ;
+    grid-row: 2/3 ;
+    background: #FFE000;
+    font-size: 70px;
+}
+
+.snapchat {
+
+    grid-column: 2/3 ;
+    grid-row: 2/3;
+    font-size: 70px;
+    background: #3CC8AA;
+}
+
+.fa-instagram {
+    color: purple;
+    
+}
+
+.fa-snapchat {
+    color: yellow;
+}
+
+.facebook {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+    75% {
+      font-size: 300%;
+      margin-left: 25%;
+      width: 150%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  .fa-snapchat{
+    animation-duration: 5s;
+    animation-name: snapchat;
+    animation-iteration-count: infinite;
+    }
+    
+    @keyframes snapchat{
+        0% {color: black;}
+        50% {color: white;}
+        100% {color: red;}
+    
+    }
+
+    .fa-twitter-square{
+        animation-duration: 5s;
+        animation-name: twitter;
+        animation-iteration-count: infinite;
+        }
+
+    @keyframes twitter{
+        0% {color: white;}
+        50% {color:red;}
+        100% {color:black;}
+    }
+
+    .fa-facebook{
+        animation-duration: 5s;
+        animation-name: facebook;
+        animation-iteration-count: infinite;
+        }
+    @keyframes facebook{
+        0% {color: red;}
+        50% {color: black;}
+        100% {color: white;}
+    
+    }
+
+    .fa-instagram{
+        animation-duration: 5s;
+        animation-name: instagram;
+        animation-iteration-count: infinite;
+        }
+
+    @keyframes instagram{
+        0% {color: black;}
+        50% {color: red;}
+        100% {color:white;}
+    
+    }
+
+    
+ /* RACCOURCI */
+
+ .flex {
+
+    display: flex;
+ }
+
+ .alignC {
+
+    align-items: center;
+ }
+
+ .justifyC {
+    justify-content: center;
+ }
+
